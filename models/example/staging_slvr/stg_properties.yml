@@ -19,6 +19,16 @@ sources:                        # level 0
 
       - name: nation
 
+  - name: custom_reveal                # level 1 (2 spaces)
+    database: DB_DBT
+    schema: SCHEMA_REVEAL
+
+    tables:                     # level 1 (2 spaces, same as name/database)
+      - name: customer
+        description: customers
+
+      - name: nation
+
 
 
   

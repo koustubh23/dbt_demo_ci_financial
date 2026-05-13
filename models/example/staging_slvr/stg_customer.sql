@@ -1,6 +1,6 @@
 WITH source AS (
 
-    SELECT * FROM {{ source('reveal', 'customer') }}   -- ✅ correct reference
+    SELECT * FROM {{ source('custom_reveal', 'customer') }}   -- ✅ correct reference
 
 ),
 
