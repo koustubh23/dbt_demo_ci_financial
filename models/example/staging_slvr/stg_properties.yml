@@ -1,0 +1,25 @@
+version: 2
+
+sources:                        # level 0
+  - name: reveal                # level 1 (2 spaces)
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF10
+
+    tables:                     # level 1 (2 spaces, same as name/database)
+      - name: orders            # level 2 (4 spaces, under tables)
+        description: Orders     # level 3 (8 spaces, under table name)
+        columns:                # level 3
+          - name: o_orderkey    # level 4 (10 spaces, under columns)
+            tests:              # level 4
+              - unique          # level 5 (12 spaces, under tests)
+              - not_null
+              
+      - name: customer
+        description: customers
+
+      - name: nation
+
+
+
+  
+

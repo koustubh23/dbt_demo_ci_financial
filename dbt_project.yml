@@ -1,5 +1,6 @@
 name: 'my_new_project'
 model-paths: ["models"]
+snapshot-paths: ['snapshots']
 models:
   my_new_project:
     +materialized: table
