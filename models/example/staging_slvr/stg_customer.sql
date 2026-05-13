@@ -16,7 +16,7 @@ renamed AS (
         c_mktsegment    AS market_segment,
         c_comment       AS comment
 
-    FROM source    -- ✅ reads from the CTE, not the raw table
+    FROM source    
 
 )
 
