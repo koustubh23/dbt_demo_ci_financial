@@ -1,8 +1,17 @@
 name: 'my_new_project'
 model-paths: ["models"]
 snapshot-paths: ['snapshots']
+
 models:
-  my_new_project:
-    +materialized: table
+  my_new_project:              # must match name above
+    example:                   # your folder inside models/
+    
+      staging_slvr:            # matches models/example/staging_slvr/
+        +materialized: table    # staging = views
+        +schema: SCHEMA_SILVER  # schema name in your warehouse
+
+      mart:                    # matches models/example/mart/
+        +materialized: table   # mart = tables
+        +schema: SCHEMA_GOLD          # schema name in your warehouse
 
 
